@@ -770,26 +770,26 @@ h6 {
 }
 
 .box-dot {
+  display: grid;
+  grid-template: repeat(4, 1fr)/repeat(12, 1fr);
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 45%;
 }
 .box-dot__tooltip {
   position: absolute;
-  left: 50%;
-  bottom: 150%;
+  left: 0;
+  left: -48%;
+  top: -30px;
   display: flex;
   border: 0.861538px solid rgba(255, 255, 255, 0.6);
   border-radius: 36px;
   padding: 12px;
   color: wheat;
   background: rgba(255, 255, 255, 0.2);
-  opacity: 0;
-  visibility: hidden;
   transition: all 0.5s ease 0s;
   gap: 8px;
   scale: 0;
-  translate: -50% -50%;
 }
 .box-dot__input {
   display: none;
@@ -825,23 +825,11 @@ h6 {
   background-color: #7c7c7c;
 }
 .box-dot__tooltip-box {
-  position: absolute;
-  top: 125px;
-}
-@media (min-width: 83.125em) {
-  .box-dot__tooltip-box {
-    left: 12.8125rem;
-  }
-}
-@media (min-width: 54.0625em) and (max-width: 83.125em) {
-  .box-dot__tooltip-box {
-    left: clamp( 0.0625rem , -23.6552419355rem  +  43.8709677419vw , 12.8125rem );
-  }
-}
-@media (max-width: 54.0625em) {
-  .box-dot__tooltip-box {
-    left: 0.0625rem;
-  }
+  position: relative;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: grid;
+  align-self: center;
 }
 @media (max-width: 61.99875em) {
   .box-dot__tooltip-box {
@@ -849,55 +837,41 @@ h6 {
   }
 }
 .box-dot__tooltip-box-2 {
-  position: absolute;
-  top: 170px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: grid;
+  align-self: center;
+  translate: 30px 30px;
 }
-@media (min-width: 83.125em) {
-  .box-dot__tooltip-box-2 {
-    left: 1.875rem;
-  }
-}
-@media (min-width: 75em) and (max-width: 83.125em) {
-  .box-dot__tooltip-box-2 {
-    left: clamp( -0.625rem , -23.7019230769rem  +  30.7692307692vw , 1.875rem );
-  }
-}
-@media (max-width: 75em) {
-  .box-dot__tooltip-box-2 {
-    left: -0.625rem;
-  }
-}
-@media (max-width: 75.3125em) {
+@media (max-width: 81.25em) {
   .box-dot__tooltip-box-2 {
     display: none;
   }
 }
-.box-dot__tooltip-box-2-1 {
-  position: absolute;
-  top: 200px;
-}
-@media (min-width: 81.25em) {
-  .box-dot__tooltip-box-2-1 {
-    left: 45.3125rem;
-  }
-}
-@media (min-width: 62em) and (max-width: 81.25em) {
-  .box-dot__tooltip-box-2-1 {
-    left: clamp( 35.3125rem , 3.1047077922rem  +  51.9480519481vw , 45.3125rem );
-  }
-}
-@media (max-width: 62em) {
-  .box-dot__tooltip-box-2-1 {
-    left: 35.3125rem;
-  }
-}
 .box-dot__tooltip-box-3 {
-  position: absolute;
-  left: 102%;
-  top: 85%;
+  position: relative;
+  grid-column: 8/9;
+  grid-row: 3/4;
+  translate: -25px -30px;
 }
-@media (max-width: 83.125em) {
+@media (max-width: 76.5625em) {
   .box-dot__tooltip-box-3 {
+    translate: -25px 0;
+  }
+}
+@media (max-width: 68.75em) {
+  .box-dot__tooltip-box-3 {
+    translate: -12px 25px;
+  }
+}
+.box-dot__tooltip-box-4 {
+  position: relative;
+  grid-column: -1/-2;
+  grid-row: -2/-3;
+  translate: 125px 30px;
+}
+@media (max-width: 87.5em) {
+  .box-dot__tooltip-box-4 {
     display: none;
   }
 }
@@ -950,6 +924,7 @@ h6 {
   visibility: visible;
   transition: all 0.5s ease 0.1s;
   scale: 1;
+  top: -90px;
 }
 @media (any-hover: hover) {
   .box-dot__button:hover {
@@ -960,6 +935,7 @@ h6 {
   }
   .box-dot__button:hover ~ .box-dot__tooltip {
     opacity: 1;
+    top: -90px;
     visibility: visible;
     transition: all 0.5s ease 0.1s;
     scale: 1;
