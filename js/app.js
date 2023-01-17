@@ -4135,8 +4135,8 @@
           loop: !0,
           loopPreventsSlide: !1,
           navigation: {
-            nextEl: ".slider-products__prev",
-            prevEl: ".slider-products__next",
+            nextEl: ".testimonials-slider__prev",
+            prevEl: ".testimonials-slider__next",
           },
           breakpoints: {
             320: { slidesPerView: 1, spaceBetween: 10, keyboard: !1 },

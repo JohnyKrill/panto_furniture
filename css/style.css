@@ -1321,12 +1321,12 @@ h6 {
     padding-block-end: 15rem;
   }
 }
-@media (min-width: 20em) and (max-width: 75em) {
+@media (min-width: 48em) and (max-width: 75em) {
   .mainpage__experiences {
-    padding-block-end: clamp( 1.25rem , -3.75rem  +  25vw , 15rem );
+    padding-block-end: clamp( 1.25rem , -23.1944444444rem  +  50.9259259259vw , 15rem );
   }
 }
-@media (max-width: 20em) {
+@media (max-width: 48em) {
   .mainpage__experiences {
     padding-block-end: 1.25rem;
   }
@@ -1920,15 +1920,51 @@ h6 {
   width: 94%;
   padding-block-end: 15%;
 }
+.testimonials-slider__prev, .testimonials-slider__next {
+  position: absolute;
+  top: 22%;
+  border-radius: 26px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  transition: background-color 0.5s ease 0s;
+}
+.testimonials-slider__prev::before, .testimonials-slider__next::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 18px;
+  height: 12px;
+  background: url("../img/iconArrowDarkSlider.svg") 0 0/cover no-repeat;
+  transition: scale 0.3s ease 0s;
+  translate: -50% -50%;
+}
+@media (any-hover: hover) {
+  .testimonials-slider__prev:hover, .testimonials-slider__next:hover {
+    background-color: #f2a850;
+    transition: background-color 0.3s ease 0s;
+  }
+  .testimonials-slider__prev:hover::before, .testimonials-slider__next:hover::before {
+    scale: 1.1;
+  }
+}
+@media (max-width: 47.99875em) {
+  .testimonials-slider__prev, .testimonials-slider__next {
+    display: none;
+  }
+}
 .testimonials-slider__prev {
   left: 1%;
-  top: 25%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .testimonials-slider__next {
   right: 1%;
-  top: 25%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.testimonials-slider__next::before {
+  rotate: 180deg;
 }
 @media (min-width: 75em) {
   .testimonials__title {
@@ -2085,7 +2121,7 @@ h6 {
   margin-block-end: 20px;
 }
 .slide-testimonials__descr {
-  display: box;
+  display: -webkit-box;
   flex-grow: 1;
   overflow: hidden;
   font-weight: 400;
