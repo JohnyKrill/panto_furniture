@@ -1,630 +1,626 @@
-<iDOCTYPE html>
-	<html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 
-	<head>
-		<title>Main</title>
-		<meta charset="UTF-8">
-		<meta name="format-detection" content="telephone=no">
-		<!-- <style>body{opacity: 0;}</style> -->
-		<link rel="stylesheet" href="css/style.min.css?_v=20230117064832">
-		<link rel="shortcut icon" href="favicon.ico">
-		<!-- <meta name="robots" content="noindex, nofollow"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
+<head>
+	<title>Main</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230118020027">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-	<body>
-		<div class="wrapper">
-			<header data-scroll-show data-scroll="100" class="header">
-				<div class="header__container">
-					<div class="header__menu menu">
-						<div class="menu__logo-box logo">
-							<a class="logo__link" href="#">Panto</a>
-						</div>
-						<nav class="menu__body">
-							<ul class="menu__list">
-								<li class="menu__item">
-									<button type="button" class="menu__btn menu__link">
-										Furniture
-									</button>
-									<div class="menu__dropdown dropdown">
-										<ul class="dropdown__list">
-											<li class="dropdown__item">
-												<a class="dropdown__link" href="#">Couch<span>></span></a>
-											</li>
-											<li class="dropdown__item">
-												<a class="dropdown__link" href="#">Sofa<span>></span></a>
-											</li>
-											<li class="dropdown__item">
-												<a class="dropdown__link" href="#">Stool<span>></span></a>
-											</li>
-											<li class="dropdown__item">
-												<a class="dropdown__link" href="#">Table<span>></span></a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link">Shop</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link">About Us</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link">Contact</a>
-								</li>
-							</ul>
-						</nav>
-						<div class="menu__bag bag">
-							<a class="bag__link" href="#">
-								<img class="bag__img" src="img/iconBag.svg" alt="cart" />
-							</a>
-						</div>
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
+<body>
+	<div class="wrapper">
+		<header data-scroll-show data-scroll="100" class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<div class="menu__logo-box logo">
+						<a class="logo__link" href="#">Panto</a>
 					</div>
-					<div class="header__content-box">
-						<h2 class="header__title">
-							Make your interior more minimalistic & modern
-						</h2>
-						<p class="header__descr">
-							Turn your room with panto into a lot more minimalist and modern with
-							ease and speed
-						</p>
-						<div class="header__search-box search">
-							<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Search furniture" class="search__input input" />
-							<button type="button" class="search__button button"></button>
-						</div>
-					</div>
-					<div class="header__dot-box box-dot">
-						<div class="box-dot__tooltip-box">
-							<!--{{{-->
-							<button aria-describedby="tooltip-1" type="button" class="header__couch-dot box-dot__button box-dot__dot-1"></button>
-							<div role="tooltip" id="tooltip-1" class="box-dot__tooltip">
-								<input checked type="radio" class="box-dot__input box-dot__input_orange" id="orange" name="item" />
-								<label for="orange" class="box-dot__label box-dot__label_orange"></label>
-								<input type="radio" class="box-dot__input box-dot__input_blue" id="blue" name="item" />
-								<label for="blue" class="box-dot__label box-dot__label_blue"></label>
-								<input type="radio" class="box-dot__input box-dot__input_lightGrey" id="grey" name="item" />
-								<label for="grey" class="box-dot__label box-dot__label_grey"></label>
-							</div>
-							<!--}}}-->
-						</div>
-
-						<div class="box-dot__tooltip-box box-dot__tooltip-box-2">
-							<!--{{{-->
-							<button aria-describedby="tooltip-2" type="button" class="box-dot__button box-dot__dot-2"></button>
-							<div role="tooltip" id="tooltip-2" class="box-dot__tooltip">
-								<input type="radio" class="box-dot__input box-dot__input_orange" id="orange-2" name="radio-2" />
-								<label for="orange-2" class="box-dot__label box-dot__label_orange"></label>
-								<input checked type="radio" class="box-dot__input box-dot__input_blue-2" id="blue-2" name="radio-2" />
-								<label for="blue-2" class="box-dot__label box-dot__label_blue"></label>
-								<input type="radio" class="box-dot__input box-dot__input_lightGrey" id="grey-2" name="radio-2" />
-								<label for="grey-2" class="box-dot__label box-dot__label_grey"></label>
-							</div>
-							<!--}}}-->
-						</div>
-
-						<div class="box-dot__tooltip-box box-dot__tooltip-box-3">
-							<!--{{{-->
-							<button aria-describedby="tooltip-3" type="button" class="box-dot__button box-dot__dot-3"></button>
-							<div role="tooltip" id="tooltip-3" class="box-dot__tooltip">
-								<input type="radio" class="box-dot__input box-dot__input_orange" id="orange-3" name="radio-3" />
-								<label for="orange-3" class="box-dot__label box-dot__label_orange"></label>
-								<input checked type="radio" class="box-dot__input box-dot__input_blue-3" id="blue-3" name="radio-3" />
-								<label for="blue-3" class="box-dot__label box-dot__label_blue"></label>
-								<input type="radio" class="box-dot__input box-dot__input_lightGrey" id="grey-3" name="radio-3" />
-								<label for="grey-3" class="box-dot__label box-dot__label_grey"></label>
-							</div>
-							<!--}}}-->
-						</div>
-
-						<div class="box-dot__tooltip-box box-dot__tooltip-box-4">
-							<!--{{{-->
-							<button aria-describedby="tooltip-4" type="button" class="box-dot__button box-dot__dot-4"></button>
-							<div role="tooltip" id="tooltip-4" class="box-dot__tooltip">
-								<input type="radio" class="box-dot__input box-dot__input_orange" id="orange-4" name="radio-4" />
-								<label for="orange-4" class="box-dot__label box-dot__label_orange"></label>
-								<input checked type="radio" class="box-dot__input box-dot__input_blue-4" id="blue-4" name="radio-4" />
-								<label for="blue-4" class="box-dot__label box-dot__label_blue"></label>
-								<input type="radio" class="box-dot__input box-dot__input_lightGrey" id="grey-4" name="radio-4" />
-								<label for="grey-4" class="box-dot__label box-dot__label_grey"></label>
-							</div>
-							<!--}}}-->
-						</div>
-					</div>
-				</div>
-			</header>
-
-			<main class="mainpage">
-				<!--{{{-->
-				<section class="mainpage__benefits benefits">
-					<div class="benefits__container">
-						<div class="benefits__body">
-							<h2 class="benefits__title benefits__title_main">
-								Why Choosing Us
-							</h2>
-							<ul class="benefits__list list-benefits">
-								<li class="list-benefits__item">
-									<h2 class="list-benefits__title">Luxury facilities</h2>
-									<p class="list-benefits__text">
-										The advantage of hiring a workspace with us is that givees
-										you comfortable service and all-around facilities.
-									</p>
-									<a class="list-benefits__btn btn-main" href="#">More info</a>
-								</li>
-								<li class="list-benefits__item">
-									<h2 class="list-benefits__title">Affordable Price</h2>
-									<p class="list-benefits__text">
-										You can get a workspace of the highst quality at an
-										affordable price and still enjoy the facilities that are
-										oly here.
-									</p>
-									<a class="list-benefits__btn btn-main" href="#">More info</a>
-								</li>
-								<li class="list-benefits__item">
-									<h2 class="list-benefits__title">Many Choices</h2>
-									<p class="list-benefits__text">
-										We provide many unique work space choices so that you can
-										choose the workspace to your liking.
-									</p>
-									<a class="list-benefits__btn btn-main" href="#">More info</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				<!--}}}-->
-				<!--{{{-->
-				<section class="mainpage__products products">
-					<div class="products__container">
-						<h2 class="products__section-title">Best Selling Product</h2>
-						<div class="products__items-wrap">
-							<ul class="products__items">
-								<li class="products__item">
-									<a class="products__link" href="#">Chair</a>
-								</li>
-								<li class="products__item">
-									<a class="products__link" href="#">Beds</a>
-								</li>
-								<li class="products__item">
-									<a class="products__link" href="#">Sofa</a>
-								</li>
-								<li class="products__item">
-									<a class="products__link" href="#">Lamp</a>
-								</li>
-							</ul>
-						</div>
-						<div class="products__slider-container slider-products">
-							<div class="slider-products__slider">
-								<div class="slider-products__swiper">
-									<div class="slider-products__slide slide-card">
-										<div class="slide-card__image-ibg_contain">
-											<picture><source srcset="img/imgChair-1.webp" type="image/webp"><img src="img/imgChair-1.png" alt="chair picture" /></picture>
-										</div>
-										<div class="slide-card__info-box">
-											<p class="slide-card__category">Chair</p>
-											<p class="slide-card__name">Sakarias Armchair</p>
-											<div class="slide-card__stars">
-												<ul>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-												</ul>
-											</div>
-											<div class="slide-card__price-box">
-												<p class="slide-card__price"><span>$</span>392</p>
-												<button type="button" class="slide-card__plus-sign"></button>
-											</div>
-										</div>
-									</div>
-									<div class="slider-products__slide slide-card">
-										<div class="slide-card__image-ibg_contain">
-											<picture><source srcset="img/imgChair-2.webp" type="image/webp"><img src="img/imgChair-2.png" alt="chair picture" /></picture>
-										</div>
-										<div class="slide-card__info-box">
-											<p class="slide-card__category">Chair</p>
-											<p class="slide-card__name">Baltsar Chair</p>
-											<div class="slide-card__stars">
-												<ul>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-												</ul>
-											</div>
-											<div class="slide-card__price-box">
-												<p class="slide-card__price"><span>$</span>292</p>
-												<button type="button" class="slide-card__plus-sign"></button>
-											</div>
-										</div>
-									</div>
-									<div class="slider-products__slide slide-card">
-										<div class="slide-card__image-ibg_contain">
-											<picture><source srcset="img/imgChair-3.webp" type="image/webp"><img src="img/imgChair-3.png" alt="chair picture" /></picture>
-										</div>
-										<div class="slide-card__info-box">
-											<p class="slide-card__category">Chair</p>
-											<p class="slide-card__name">Anjay Chair</p>
-											<div class="slide-card__stars">
-												<ul>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-												</ul>
-											</div>
-											<div class="slide-card__price-box">
-												<p class="slide-card__price"><span>$</span>519</p>
-												<button type="button" class="slide-card__plus-sign"></button>
-											</div>
-										</div>
-									</div>
-									<div class="slider-products__slide slide-card">
-										<div class="slide-card__image-ibg_contain">
-											<picture><source srcset="img/imgChair-4.webp" type="image/webp"><img src="img/imgChair-4.png" alt="chair picture" /></picture>
-										</div>
-										<div class="slide-card__info-box">
-											<p class="slide-card__category">Chair</p>
-											<p class="slide-card__name">Nyantuy Chair</p>
-											<div class="slide-card__stars">
-												<ul>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-												</ul>
-											</div>
-											<div class="slide-card__price-box">
-												<p class="slide-card__price"><span>$</span>921</p>
-												<button type="button" class="slide-card__plus-sign"></button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<button type="button" class="slider-products__prev"></button>
-							<button type="button" class="slider-products__next"></button>
-						</div>
-						<a class="products__btn btn-main" href="#">View All</a>
-					</div>
-				</section>
-				<!--}}}-->
-				<!--{{{-->
-				<section class="mainpage__experiences experiences">
-					<div class="experiences__container">
-						<div class="experiences__body">
-							<div class="experiences__img">
-								<div class="experiences__image-ibg">
-									<picture><source srcset="img/imgExperiences-1.webp" type="image/webp"><img src="img/imgExperiences-1.jpg" alt="" /></picture>
-									<!-- <picture><source srcset="img/imgExperiences-1.webp" type="image/webp"><img class="experiences__bg" src="img/imgExperiences-1.jpg" alt="" /></picture> -->
-								</div>
-							</div>
-							<div class="experiences__content common-info-block">
-								<h3 class="experiences__subtitle common-subtitle">
-									experiences
-								</h3>
-								<h2 class="experiences__title common-title">
-									we provide you the best experience
-								</h2>
-								<p class="experiences__text common-text">
-									You don’t have to worry about the result because all of
-									these interiors are made by people who are professionals in
-									their fields with an elegant and lucurious style and with
-									premium quality materials
-								</p>
-								<div class="experiences__btn-wrap">
-									<a class="experiences__btn btn-main" href="#">More Info</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--}}}-->
-				<!--{{{-->
-				<div class="section mainpage__materials materials">
-					<div class="materials__container">
-						<div class="materials__body">
-							<div class="materials__content common-info-block">
-								<h3 class="materials__subtitle common-subtitle">materials</h3>
-								<h2 class="materials__title common-title">
-									Very serious materials for making furniture
-								</h2>
-								<p class="materials__text common-text">
-									Because panto was very serious about designing furniture for
-									our environment, using a very expensive and famous capital
-									but at a relatively low price
-								</p>
-								<div class="materials__btn-wrap">
-									<a class="materials__btn btn-main" href="#">More Info</a>
-								</div>
-							</div>
-							<div class="materials__img-box">
-								<div class="materials__image-ibg materials__img-1">
-									<picture><source srcset="img/imgMaterials-1.webp" type="image/webp"><img src="img/imgMaterials-1.jpg" alt="" /></picture>
-								</div>
-								<div class="materials__img-3-wrap">
-									<div class="materials__image-ibg materials__img-3">
-										<picture><source srcset="img/imgMaterials-3.webp" type="image/webp"><img src="img/imgMaterials-3.jpg" alt="" /></picture>
-									</div>
-								</div>
-								<div class="materials__image-ibg materials__img-2">
-									<picture><source srcset="img/imgMaterials-2.webp" type="image/webp"><img src="img/imgMaterials-2.jpg" alt="" /></picture>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--}}}-->
-				<!--{{{-->
-				<section class="mainpage__testimonials testimonials">
-					<div class="testimonials__container">
-						<h3 class="testimonials__subtitle common-subtitle">
-							testimonials
-						</h3>
-						<h2 class="testimonials__title common-title">
-							Our Client Reviews
-						</h2>
-						<div class="testimonials__slider-wrap">
-							<div class="testimonials__slider">
-								<div class="testimonials__swiper">
-									<div class="testimonials__slide slide-testimonials slide-testimonials_1">
-										<a class="slide-testimonials__link slide-testimonials__link_1" href="#">
-											<div class="slide-testimonials__body">
-												<div class="slide-testimonials__image-ibg">
-													<div class="slide-testimonials__image-bg"></div>
-													<picture><source srcset="img/imgTesimonialsPerson-1.webp" type="image/webp"><img src="img/imgTesimonialsPerson-1.jpg" alt="" /></picture>
-												</div>
-												<div class="slide-testimonials__info">
-													<p class="slide-testimonials__name">Bang Upin</p>
-													<p class="slide-testimonials__position">
-														Pedagang Asongan
-													</p>
-													<p class="slide-testimonials__descr">
-														“Terimakasih banyak, kini ruanganku menjadi lebih
-														mewah dan terlihat mahal“
-													</p>
-													<div class="slide-card__stars slide-testimonials__stars">
-														<ul>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="testimonials__slide slide-testimonials slide-testimonials_2">
-										<a class="slide-testimonials__link slide-testimonials__link_2" href="#">
-											<div class="slide-testimonials__body">
-												<div class="slide-testimonials__image-ibg">
-													<div class="slide-testimonials__image-bg"></div>
-													<picture><source srcset="img/imgTesimonialsPerson-2.webp" type="image/webp"><img src="img/imgTesimonialsPerson-2.jpg" alt="" /></picture>
-												</div>
-												<div class="slide-testimonials__info">
-													<p class="slide-testimonials__name">Ibuk Sukijan</p>
-													<p class="slide-testimonials__position">
-														Ibu Rumah Tangga
-													</p>
-													<p class="slide-testimonials__descr">
-														“Makasih Panto, aku sekarang berasa tinggal di
-														tinggal di apartment karena barang- mewah“
-													</p>
-													<div class="slide-card__stars slide-testimonials__stars">
-														<ul>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="testimonials__slide slide-testimonials slide-testimonials_3">
-										<a class="slide-testimonials__link slide-testimonials__link_3" href="#">
-											<div class="slide-testimonials__body">
-												<div class="slide-testimonials__image-ibg">
-													<div class="slide-testimonials__image-bg"></div>
-													<picture><source srcset="img/imgTesimonialsPerson-3.webp" type="image/webp"><img src="img/imgTesimonialsPerson-3.jpg" alt="" /></picture>
-												</div>
-												<div class="slide-testimonials__info">
-													<p class="slide-testimonials__name">Mpok Ina</p>
-													<p class="slide-testimonials__position">
-														Karyawan Swasta
-													</p>
-													<p class="slide-testimonials__descr">
-														“Sangat terjangkau untuk kantong saya yang tidak
-														terlalu banyak“
-													</p>
-													<div class="slide-card__stars slide-testimonials__stars">
-														<ul>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="testimonials__slide slide-testimonials slide-testimonials_3">
-										<a class="slide-testimonials__link slide-testimonials__link_3" href="#">
-											<div class="slide-testimonials__body">
-												<div class="slide-testimonials__image-ibg">
-													<div class="slide-testimonials__image-bg"></div>
-													<picture><source srcset="img/imgTesimonialsPerson-3.webp" type="image/webp"><img src="img/imgTesimonialsPerson-3.jpg" alt="" /></picture>
-												</div>
-												<div class="slide-testimonials__info">
-													<p class="slide-testimonials__name">Mpok Ina</p>
-													<p class="slide-testimonials__position">
-														Karyawan Swasta
-													</p>
-													<p class="slide-testimonials__descr">
-														“Sangat terjangkau untuk kantong saya yang tidak
-														terlalu banyak“
-													</p>
-													<div class="slide-card__stars slide-testimonials__stars">
-														<ul>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="testimonials__slide slide-testimonials slide-testimonials_3">
-										<a class="slide-testimonials__link slide-testimonials__link_3" href="#">
-											<div class="slide-testimonials__body">
-												<div class="slide-testimonials__image-ibg">
-													<div class="slide-testimonials__image-bg"></div>
-													<picture><source srcset="img/imgTesimonialsPerson-3.webp" type="image/webp"><img src="img/imgTesimonialsPerson-3.jpg" alt="" /></picture>
-												</div>
-												<div class="slide-testimonials__info">
-													<p class="slide-testimonials__name">Mpok Ina</p>
-													<p class="slide-testimonials__position">
-														Karyawan Swasta
-													</p>
-													<p class="slide-testimonials__descr">
-														“Sangat terjangkau untuk kantong saya yang tidak
-														terlalu banyak“
-													</p>
-													<div class="slide-card__stars slide-testimonials__stars">
-														<ul>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="testimonials__slide slide-testimonials slide-testimonials_3">
-										<a class="slide-testimonials__link slide-testimonials__link_3" href="#">
-											<div class="slide-testimonials__body">
-												<div class="slide-testimonials__image-ibg">
-													<div class="slide-testimonials__image-bg"></div>
-													<picture><source srcset="img/imgTesimonialsPerson-3.webp" type="image/webp"><img src="img/imgTesimonialsPerson-3.jpg" alt="" /></picture>
-												</div>
-												<div class="slide-testimonials__info">
-													<p class="slide-testimonials__name">Mpok Ina</p>
-													<p class="slide-testimonials__position">
-														Karyawan Swasta
-													</p>
-													<p class="slide-testimonials__descr">
-														“Sangat terjangkau untuk kantong saya yang tidak
-														terlalu banyak“
-													</p>
-													<div class="slide-card__stars slide-testimonials__stars">
-														<ul>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-															<li></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<button type="button" class="slider-products__prev testimonials-slider__prev"></button>
-							<button type="button" class="slider-products__next testimonials-slider__next"></button>
-						</div>
-					</div>
-				</section>
-				<!--}}}-->
-			</main>
-			<footer class="footer">
-				<div class="footer__container">
-					<div class="footer__body body">
-						<div class="body__content">
-							<h3 class="body__title">Panto</h3>
-							<p class="body__text">
-								The advantage of hiring a workspace with us is that givees you
-								comfortable service and all-around facilities.
-							</p>
-						</div>
-						<div data-spollers="767.98, max" data-one-spoller class="footer-spoller">
-							<div class="footer-spoller__item footer-spoller__services">
-								<button type="button" data-spoller class="footer-spoller__title spollers__title">
-									Services
-								</button>
-								<ul class="footer-spoller__list">
-									<li class="footer-spoller__item">
-										<a class="footer-spoller__link" href="#">Email Marketing</a>
-									</li>
-									<li class="footer-spoller__item">
-										<a class="footer-spoller__link" href="#">Campaigns</a>
-									</li>
-									<li class="footer-spoller__item">
-										<a class="footer-spoller__link" href="#">Branding</a>
-									</li>
-								</ul>
-							</div>
-							<div class="footer-spoller__item footer-spoller__furniture">
-								<button type="button" data-spoller class="spollers__title footer-spoller__title">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<button type="button" class="menu__btn menu__link">
 									Furniture
 								</button>
-								<ul class="footer-spoller__list">
-									<li class="footer-spoller__item">
-										<a class="footer-spoller__link" href="#">Beds</a>
-									</li>
-									<li class="footer-spoller__item">
-										<a class="footer-spoller__link" href="#">Chair</a>
-									</li>
-									<li class="footer-spoller__item">
-										<a class="footer-spoller__link" href="#">All</a>
-									</li>
-								</ul>
+								<div class="menu__dropdown dropdown">
+									<ul class="dropdown__list">
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">Couch<span>></span></a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">Sofa<span>></span></a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">Stool<span>></span></a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">Table<span>></span></a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Shop</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">About Us</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="menu__bag bag">
+						<a class="bag__link" href="#">
+							<img class="bag__img" src="img/iconBag.svg" alt="cart" />
+						</a>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+				<div class="header__content-box">
+					<h2 class="header__title">
+						Make your interior more minimalistic & modern
+					</h2>
+					<p class="header__descr">
+						Turn your room with panto into a lot more minimalist and modern with
+						ease and speed
+					</p>
+					<div class="header__search-box search">
+						<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Search furniture" class="search__input input" />
+						<button type="button" class="search__button button"></button>
+					</div>
+				</div>
+				<div class="header__dot-box box-dot">
+					<div class="box-dot__tooltip-box">
+						<!--{{{-->
+						<button aria-describedby="tooltip-1" type="button" class="header__couch-dot box-dot__button box-dot__dot-1"></button>
+						<div role="tooltip" id="tooltip-1" class="box-dot__tooltip">
+							<input checked type="radio" class="box-dot__input box-dot__input_orange" id="orange" name="item" />
+							<label for="orange" class="box-dot__label box-dot__label_orange"></label>
+							<input type="radio" class="box-dot__input box-dot__input_blue" id="blue" name="item" />
+							<label for="blue" class="box-dot__label box-dot__label_blue"></label>
+							<input type="radio" class="box-dot__input box-dot__input_lightGrey" id="grey" name="item" />
+							<label for="grey" class="box-dot__label box-dot__label_grey"></label>
+						</div>
+						<!--}}}-->
+					</div>
+
+					<div class="box-dot__tooltip-box box-dot__tooltip-box-2">
+						<!--{{{-->
+						<button aria-describedby="tooltip-2" type="button" class="box-dot__button box-dot__dot-2"></button>
+						<div role="tooltip" id="tooltip-2" class="box-dot__tooltip">
+							<input type="radio" class="box-dot__input box-dot__input_orange" id="orange-2" name="radio-2" />
+							<label for="orange-2" class="box-dot__label box-dot__label_orange"></label>
+							<input checked type="radio" class="box-dot__input box-dot__input_blue-2" id="blue-2" name="radio-2" />
+							<label for="blue-2" class="box-dot__label box-dot__label_blue"></label>
+							<input type="radio" class="box-dot__input box-dot__input_lightGrey" id="grey-2" name="radio-2" />
+							<label for="grey-2" class="box-dot__label box-dot__label_grey"></label>
+						</div>
+						<!--}}}-->
+					</div>
+
+					<div class="box-dot__tooltip-box box-dot__tooltip-box-3">
+						<!--{{{-->
+						<button aria-describedby="tooltip-3" type="button" class="box-dot__button box-dot__dot-3"></button>
+						<div role="tooltip" id="tooltip-3" class="box-dot__tooltip">
+							<input type="radio" class="box-dot__input box-dot__input_orange" id="orange-3" name="radio-3" />
+							<label for="orange-3" class="box-dot__label box-dot__label_orange"></label>
+							<input checked type="radio" class="box-dot__input box-dot__input_blue-3" id="blue-3" name="radio-3" />
+							<label for="blue-3" class="box-dot__label box-dot__label_blue"></label>
+							<input type="radio" class="box-dot__input box-dot__input_lightGrey" id="grey-3" name="radio-3" />
+							<label for="grey-3" class="box-dot__label box-dot__label_grey"></label>
+						</div>
+						<!--}}}-->
+					</div>
+
+					<div class="box-dot__tooltip-box box-dot__tooltip-box-4">
+						<!--{{{-->
+						<button aria-describedby="tooltip-4" type="button" class="box-dot__button box-dot__dot-4"></button>
+						<div role="tooltip" id="tooltip-4" class="box-dot__tooltip">
+							<input type="radio" class="box-dot__input box-dot__input_orange" id="orange-4" name="radio-4" />
+							<label for="orange-4" class="box-dot__label box-dot__label_orange"></label>
+							<input checked type="radio" class="box-dot__input box-dot__input_blue-4" id="blue-4" name="radio-4" />
+							<label for="blue-4" class="box-dot__label box-dot__label_blue"></label>
+							<input type="radio" class="box-dot__input box-dot__input_lightGrey" id="grey-4" name="radio-4" />
+							<label for="grey-4" class="box-dot__label box-dot__label_grey"></label>
+						</div>
+						<!--}}}-->
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="mainpage">
+			<!--{{{-->
+			<section class="mainpage__benefits benefits">
+				<div class="benefits__container">
+					<div class="benefits__body">
+						<h2 class="benefits__title benefits__title_main">
+							Why Choosing Us
+						</h2>
+						<ul class="benefits__list list-benefits">
+							<li class="list-benefits__item">
+								<h2 class="list-benefits__title">Luxury facilities</h2>
+								<p class="list-benefits__text">
+									The advantage of hiring a workspace with us is that givees
+									you comfortable service and all-around facilities.
+								</p>
+								<a class="list-benefits__btn btn-main" href="#">More info</a>
+							</li>
+							<li class="list-benefits__item">
+								<h2 class="list-benefits__title">Affordable Price</h2>
+								<p class="list-benefits__text">
+									You can get a workspace of the highst quality at an
+									affordable price and still enjoy the facilities that are oly
+									here.
+								</p>
+								<a class="list-benefits__btn btn-main" href="#">More info</a>
+							</li>
+							<li class="list-benefits__item">
+								<h2 class="list-benefits__title">Many Choices</h2>
+								<p class="list-benefits__text">
+									We provide many unique work space choices so that you can
+									choose the workspace to your liking.
+								</p>
+								<a class="list-benefits__btn btn-main" href="#">More info</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--}}}-->
+			<!--{{{-->
+			<section class="mainpage__products products">
+				<div class="products__container">
+					<h2 class="products__section-title">Best Selling Product</h2>
+					<div class="products__items-wrap">
+						<ul class="products__items">
+							<li class="products__item">
+								<a class="products__link" href="#">Chair</a>
+							</li>
+							<li class="products__item">
+								<a class="products__link" href="#">Beds</a>
+							</li>
+							<li class="products__item">
+								<a class="products__link" href="#">Sofa</a>
+							</li>
+							<li class="products__item">
+								<a class="products__link" href="#">Lamp</a>
+							</li>
+						</ul>
+					</div>
+					<div class="products__slider-container slider-products">
+						<div class="slider-products__slider">
+							<div class="slider-products__swiper">
+								<div class="slider-products__slide slide-card">
+									<div class="slide-card__image-ibg_contain">
+										<picture><source srcset="img/imgChair-1.webp" type="image/webp"><img src="img/imgChair-1.png" alt="chair picture" /></picture>
+									</div>
+									<div class="slide-card__info-box">
+										<p class="slide-card__category">Chair</p>
+										<p class="slide-card__name">Sakarias Armchair</p>
+										<div class="slide-card__stars">
+											<ul>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+											</ul>
+										</div>
+										<div class="slide-card__price-box">
+											<p class="slide-card__price"><span>$</span>392</p>
+											<button type="button" class="slide-card__plus-sign"></button>
+										</div>
+									</div>
+								</div>
+								<div class="slider-products__slide slide-card">
+									<div class="slide-card__image-ibg_contain">
+										<picture><source srcset="img/imgChair-2.webp" type="image/webp"><img src="img/imgChair-2.png" alt="chair picture" /></picture>
+									</div>
+									<div class="slide-card__info-box">
+										<p class="slide-card__category">Chair</p>
+										<p class="slide-card__name">Baltsar Chair</p>
+										<div class="slide-card__stars">
+											<ul>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+											</ul>
+										</div>
+										<div class="slide-card__price-box">
+											<p class="slide-card__price"><span>$</span>292</p>
+											<button type="button" class="slide-card__plus-sign"></button>
+										</div>
+									</div>
+								</div>
+								<div class="slider-products__slide slide-card">
+									<div class="slide-card__image-ibg_contain">
+										<picture><source srcset="img/imgChair-3.webp" type="image/webp"><img src="img/imgChair-3.png" alt="chair picture" /></picture>
+									</div>
+									<div class="slide-card__info-box">
+										<p class="slide-card__category">Chair</p>
+										<p class="slide-card__name">Anjay Chair</p>
+										<div class="slide-card__stars">
+											<ul>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+											</ul>
+										</div>
+										<div class="slide-card__price-box">
+											<p class="slide-card__price"><span>$</span>519</p>
+											<button type="button" class="slide-card__plus-sign"></button>
+										</div>
+									</div>
+								</div>
+								<div class="slider-products__slide slide-card">
+									<div class="slide-card__image-ibg_contain">
+										<picture><source srcset="img/imgChair-4.webp" type="image/webp"><img src="img/imgChair-4.png" alt="chair picture" /></picture>
+									</div>
+									<div class="slide-card__info-box">
+										<p class="slide-card__category">Chair</p>
+										<p class="slide-card__name">Nyantuy Chair</p>
+										<div class="slide-card__stars">
+											<ul>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+											</ul>
+										</div>
+										<div class="slide-card__price-box">
+											<p class="slide-card__price"><span>$</span>921</p>
+											<button type="button" class="slide-card__plus-sign"></button>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="footer-spoller__item footer-spoller__follow-us">
-								<button type="button" data-spoller class="spollers__title footer-spoller__title">
-									Follow Us
-								</button>
-								<ul class="footer-spoller__list">
-									<li class="footer-spoller__item">
-										<a class="footer-spoller__link footer-spoller__link-facebook" href="#">Facebook</a>
-									</li>
-									<li class="footer-spoller__item">
-										<a class="footer-spoller__link footer-spoller__link-twitter" href="#">Twitter</a>
-									</li>
-									<li class="footer-spoller__item">
-										<a class="footer-spoller__link footer-spoller__link-instagram" href="#">Instagram</a>
-									</li>
-								</ul>
+						</div>
+						<button type="button" class="slider-products__prev"></button>
+						<button type="button" class="slider-products__next"></button>
+					</div>
+					<a class="products__btn btn-main" href="#">View All</a>
+				</div>
+			</section>
+			<!--}}}-->
+			<!--{{{-->
+			<section class="mainpage__experiences experiences">
+				<div class="experiences__container">
+					<div class="experiences__body">
+						<div class="experiences__img">
+							<div class="experiences__image-ibg">
+								<picture><source srcset="img/imgExperiences-1.webp" type="image/webp"><img src="img/imgExperiences-1.jpg" alt="" /></picture>
+								<!-- <picture><source srcset="img/imgExperiences-1.webp" type="image/webp"><img class="experiences__bg" src="img/imgExperiences-1.jpg" alt="" /></picture> -->
+							</div>
+						</div>
+						<div class="experiences__content common-info-block">
+							<h3 class="experiences__subtitle common-subtitle">
+								experiences
+							</h3>
+							<h2 class="experiences__title common-title">
+								we provide you the best experience
+							</h2>
+							<p class="experiences__text common-text">
+								You don’t have to worry about the result because all of these
+								interiors are made by people who are professionals in their
+								fields with an elegant and lucurious style and with premium
+								quality materials
+							</p>
+							<div class="experiences__btn-wrap">
+								<a class="experiences__btn btn-main" href="#">More Info</a>
 							</div>
 						</div>
 					</div>
-					<div class="footer__bottom">
-						<p class="footer__bottom-copy">Copyright © 2021</p>
-						<p class="footer__bottom-terms">Terms & Conditions</p>
-						<p class="footer__bottom-privacy">Privacy Policy</p>
+				</div>
+			</section>
+			<!--}}}-->
+			<!--{{{-->
+			<div class="section mainpage__materials materials">
+				<div class="materials__container">
+					<div class="materials__body">
+						<div class="materials__content common-info-block">
+							<h3 class="materials__subtitle common-subtitle">materials</h3>
+							<h2 class="materials__title common-title">
+								Very serious materials for making furniture
+							</h2>
+							<p class="materials__text common-text">
+								Because panto was very serious about designing furniture for
+								our environment, using a very expensive and famous capital but
+								at a relatively low price
+							</p>
+							<div class="materials__btn-wrap">
+								<a class="materials__btn btn-main" href="#">More Info</a>
+							</div>
+						</div>
+						<div class="materials__img-box">
+							<div class="materials__image-ibg materials__img-1">
+								<picture><source srcset="img/imgMaterials-1.webp" type="image/webp"><img src="img/imgMaterials-1.jpg" alt="" /></picture>
+							</div>
+							<div class="materials__img-3-wrap">
+								<div class="materials__image-ibg materials__img-3">
+									<picture><source srcset="img/imgMaterials-3.webp" type="image/webp"><img src="img/imgMaterials-3.jpg" alt="" /></picture>
+								</div>
+							</div>
+							<div class="materials__image-ibg materials__img-2">
+								<picture><source srcset="img/imgMaterials-2.webp" type="image/webp"><img src="img/imgMaterials-2.jpg" alt="" /></picture>
+							</div>
+						</div>
 					</div>
 				</div>
-			</footer>
+			</div>
+			<!--}}}-->
+			<!--{{{-->
+			<section class="mainpage__testimonials testimonials">
+				<div class="testimonials__container">
+					<h3 class="testimonials__subtitle common-subtitle">testimonials</h3>
+					<h2 class="testimonials__title common-title">Our Client Reviews</h2>
+					<div class="testimonials__slider-wrap">
+						<div class="testimonials__slider">
+							<div class="testimonials__swiper">
+								<div class="testimonials__slide slide-testimonials slide-testimonials_1">
+									<a class="slide-testimonials__link slide-testimonials__link_1" href="#">
+										<div class="slide-testimonials__body">
+											<div class="slide-testimonials__image-ibg">
+												<div class="slide-testimonials__image-bg"></div>
+												<picture><source srcset="img/imgTesimonialsPerson-1.webp" type="image/webp"><img src="img/imgTesimonialsPerson-1.jpg" alt="" /></picture>
+											</div>
+											<div class="slide-testimonials__info">
+												<p class="slide-testimonials__name">Bang Upin</p>
+												<p class="slide-testimonials__position">
+													Pedagang Asongan
+												</p>
+												<p class="slide-testimonials__descr">
+													“Terimakasih banyak, kini ruanganku menjadi lebih
+													mewah dan terlihat mahal“
+												</p>
+												<div class="slide-card__stars slide-testimonials__stars">
+													<ul>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="testimonials__slide slide-testimonials slide-testimonials_2">
+									<a class="slide-testimonials__link slide-testimonials__link_2" href="#">
+										<div class="slide-testimonials__body">
+											<div class="slide-testimonials__image-ibg">
+												<div class="slide-testimonials__image-bg"></div>
+												<picture><source srcset="img/imgTesimonialsPerson-2.webp" type="image/webp"><img src="img/imgTesimonialsPerson-2.jpg" alt="" /></picture>
+											</div>
+											<div class="slide-testimonials__info">
+												<p class="slide-testimonials__name">Ibuk Sukijan</p>
+												<p class="slide-testimonials__position">
+													Ibu Rumah Tangga
+												</p>
+												<p class="slide-testimonials__descr">
+													“Makasih Panto, aku sekarang berasa tinggal di
+													tinggal di apartment karena barang- mewah“
+												</p>
+												<div class="slide-card__stars slide-testimonials__stars">
+													<ul>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="testimonials__slide slide-testimonials slide-testimonials_3">
+									<a class="slide-testimonials__link slide-testimonials__link_3" href="#">
+										<div class="slide-testimonials__body">
+											<div class="slide-testimonials__image-ibg">
+												<div class="slide-testimonials__image-bg"></div>
+												<picture><source srcset="img/imgTesimonialsPerson-3.webp" type="image/webp"><img src="img/imgTesimonialsPerson-3.jpg" alt="" /></picture>
+											</div>
+											<div class="slide-testimonials__info">
+												<p class="slide-testimonials__name">Mpok Ina</p>
+												<p class="slide-testimonials__position">
+													Karyawan Swasta
+												</p>
+												<p class="slide-testimonials__descr">
+													“Sangat terjangkau untuk kantong saya yang tidak
+													terlalu banyak“
+												</p>
+												<div class="slide-card__stars slide-testimonials__stars">
+													<ul>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="testimonials__slide slide-testimonials slide-testimonials_3">
+									<a class="slide-testimonials__link slide-testimonials__link_3" href="#">
+										<div class="slide-testimonials__body">
+											<div class="slide-testimonials__image-ibg">
+												<div class="slide-testimonials__image-bg"></div>
+												<picture><source srcset="img/imgTesimonialsPerson-3.webp" type="image/webp"><img src="img/imgTesimonialsPerson-3.jpg" alt="" /></picture>
+											</div>
+											<div class="slide-testimonials__info">
+												<p class="slide-testimonials__name">Mpok Ina</p>
+												<p class="slide-testimonials__position">
+													Karyawan Swasta
+												</p>
+												<p class="slide-testimonials__descr">
+													“Sangat terjangkau untuk kantong saya yang tidak
+													terlalu banyak“
+												</p>
+												<div class="slide-card__stars slide-testimonials__stars">
+													<ul>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="testimonials__slide slide-testimonials slide-testimonials_3">
+									<a class="slide-testimonials__link slide-testimonials__link_3" href="#">
+										<div class="slide-testimonials__body">
+											<div class="slide-testimonials__image-ibg">
+												<div class="slide-testimonials__image-bg"></div>
+												<picture><source srcset="img/imgTesimonialsPerson-3.webp" type="image/webp"><img src="img/imgTesimonialsPerson-3.jpg" alt="" /></picture>
+											</div>
+											<div class="slide-testimonials__info">
+												<p class="slide-testimonials__name">Mpok Ina</p>
+												<p class="slide-testimonials__position">
+													Karyawan Swasta
+												</p>
+												<p class="slide-testimonials__descr">
+													“Sangat terjangkau untuk kantong saya yang tidak
+													terlalu banyak“
+												</p>
+												<div class="slide-card__stars slide-testimonials__stars">
+													<ul>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="testimonials__slide slide-testimonials slide-testimonials_3">
+									<a class="slide-testimonials__link slide-testimonials__link_3" href="#">
+										<div class="slide-testimonials__body">
+											<div class="slide-testimonials__image-ibg">
+												<div class="slide-testimonials__image-bg"></div>
+												<picture><source srcset="img/imgTesimonialsPerson-3.webp" type="image/webp"><img src="img/imgTesimonialsPerson-3.jpg" alt="" /></picture>
+											</div>
+											<div class="slide-testimonials__info">
+												<p class="slide-testimonials__name">Mpok Ina</p>
+												<p class="slide-testimonials__position">
+													Karyawan Swasta
+												</p>
+												<p class="slide-testimonials__descr">
+													“Sangat terjangkau untuk kantong saya yang tidak
+													terlalu banyak“
+												</p>
+												<div class="slide-card__stars slide-testimonials__stars">
+													<ul>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="testimonials-slider__prev"></button>
+						<button type="button" class="testimonials-slider__next"></button>
+					</div>
+				</div>
+			</section>
+			<!--}}}-->
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body body">
+					<div class="body__content">
+						<h3 class="body__title">Panto</h3>
+						<p class="body__text">
+							The advantage of hiring a workspace with us is that givees you
+							comfortable service and all-around facilities.
+						</p>
+					</div>
+					<div data-spollers="767.98, max" data-one-spoller class="footer-spoller">
+						<div class="footer-spoller__item footer-spoller__services">
+							<button type="button" data-spoller class="footer-spoller__title spollers__title">
+								Services
+							</button>
+							<ul class="footer-spoller__list">
+								<li class="footer-spoller__item">
+									<a class="footer-spoller__link" href="#">Email Marketing</a>
+								</li>
+								<li class="footer-spoller__item">
+									<a class="footer-spoller__link" href="#">Campaigns</a>
+								</li>
+								<li class="footer-spoller__item">
+									<a class="footer-spoller__link" href="#">Branding</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-spoller__item footer-spoller__furniture">
+							<button type="button" data-spoller class="spollers__title footer-spoller__title">
+								Furniture
+							</button>
+							<ul class="footer-spoller__list">
+								<li class="footer-spoller__item">
+									<a class="footer-spoller__link" href="#">Beds</a>
+								</li>
+								<li class="footer-spoller__item">
+									<a class="footer-spoller__link" href="#">Chair</a>
+								</li>
+								<li class="footer-spoller__item">
+									<a class="footer-spoller__link" href="#">All</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-spoller__item footer-spoller__follow-us">
+							<button type="button" data-spoller class="spollers__title footer-spoller__title">
+								Follow Us
+							</button>
+							<ul class="footer-spoller__list">
+								<li class="footer-spoller__item">
+									<a class="footer-spoller__link footer-spoller__link-facebook" href="#">Facebook</a>
+								</li>
+								<li class="footer-spoller__item">
+									<a class="footer-spoller__link footer-spoller__link-twitter" href="#">Twitter</a>
+								</li>
+								<li class="footer-spoller__item">
+									<a class="footer-spoller__link footer-spoller__link-instagram" href="#">Instagram</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<p class="footer__bottom-copy">Copyright © 2021</p>
+					<p class="footer__bottom-terms">Terms & Conditions</p>
+					<p class="footer__bottom-privacy">Privacy Policy</p>
+				</div>
+			</div>
+		</footer>
 
-		</div>
-		<!-- 
+	</div>
+	<!-- 
 <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
@@ -636,9 +632,8 @@
 </div>
  -->
 
-		<!---->
-		<script src="js/app.min.js?_v=20230117064832"></script>
-	</body>
+	<!---->
+	<script src="js/app.min.js?_v=20230118020027"></script>
+</body>
 
-	</html>
-</iDOCTYPE>
+</html
